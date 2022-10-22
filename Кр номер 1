@@ -1,0 +1,25 @@
+pprint('Введите трёхзначное число:')
+x=int(input())
+a=x//100
+b=x//10%10
+c=x%10
+d=a+b+c-max(a,b,c)-min(a,b,c)
+if d==max(a,b,c)-min(a,b,c):
+print('Число n "интересное, введите строку"')
+e = str(input())
+f = (x / len(e))**2
+print(f)
+elif d==(a*b*c)>150 and (a*b*c)<400:
+print("Это число магическое!")
+e = str(input())
+if "Маг" in e:
+print('заколдованно')
+else: print("нет эфекта")
+elif (d==max(a,b,c)-min(a,b,c)) and (d==(a*b*c)>150 and (a*b*c)<400):
+print('это число интересное и магичесоке')
+print('ведите вещественное число')
+ab = float(input())
+print('введите строку')
+ac = len(str(input()))
+x = ((ab - ac)**2)/a * (b/3)
+else: print("это обычное число")
